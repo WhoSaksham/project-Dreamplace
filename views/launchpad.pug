@@ -1,0 +1,485 @@
+extends template.pug
+
+block head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Launchpad - Dreamplace
+    link(rel='stylesheet', href='./css/launchpad.css')
+    link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap", rel="stylesheet")
+    script(src='https://kit.fontawesome.com/827cbaa6bf.js', crossorigin='anonymous')
+    link(rel='icon', type='image/x-icon', href='./img/favicon_logo.jpg')
+
+block content
+    section#header
+      a.logo(href='/')
+        img(src='./img/logo.png', alt='logo')
+      div
+        ul.navbar
+          li
+            a(href='/') Home
+          li
+            a.active(href='/launchpad') Launchpad
+          li
+            a(href='/collections') Collections
+          li
+            a(href='/dropcal') Drop Calendar
+          li
+            a(href='/about') About
+    section.liveDrop
+      h1 Live
+      .container
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Cheddar Block Games.gif', alt='')
+              .header Cheddar Block Games
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 11000 INR
+                .supply
+                  strong Total Supply: 
+                  | 3100
+                .date
+                  strong Date: 
+                  | 6th July
+                .time
+                  strong Time: 
+                  | 6 pm 
+                  i.fa-solid.fa-hourglass-clock
+                .icons
+                  a(href='https://twitter.com/Cheddar_Block', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='https://discord.com/invite/cheddarblockgames', target='_blank')
+                    i.fa-brands.fa-discord
+                  a(href='https://www.cheddarblock.games/', target='_blank')
+                    i.fa-solid.fa-globe
+              input(type='number', min='1', max='5', value='1')
+              button.btn Mint
+          br
+          .desc
+            | Coming to Solana is a social gaming platform built for IOS and Android, created by a smash hit game
+            | development team.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Infected Mob.gif', alt='Infected Mob')
+              .header Infected Mob
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 5000 INR
+                .supply
+                  strong Total Supply: 
+                  | 7777
+                .date
+                  strong Date: 
+                  | 6th July
+                .time
+                  strong Time: 
+                  | 11.30 pm
+                .icons
+                  a(href='https://twitter.com/robotmafiaclub', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='https://discord.com/invite/infectedmob', target='_blank')
+                    i.fa-brands.fa-discord
+                  a(href='https://www.mobstudios.io/', target='_blank')
+                    i.fa-solid.fa-globe
+              input(type='number', min='1', max='5', value='1')
+              button.btn Mint
+          br
+          .desc
+            | A science experiment gone completely wrong. 7777 deranged and savage mobsters wreaking havoc in
+            | the streets of Solana.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Nekomata.gif', alt='')
+              .header Nekomata
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 4000 INR
+                .supply
+                  strong Total Supply: 
+                  | 8888
+                .date
+                  strong Date: 
+                  | 6th July
+                .time
+                  strong Time: 
+                  | 11.30 pm
+                .icons
+                  a(href='')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              input(type='number', min='1', max='5', value='1')
+              button.btn Mint
+          br
+          .desc
+            | Nekomata is a clan of neko samurai, consuming the Onkei in pursuit of power and riches. Nekomata
+            | will bring manga NFTs to the forefront of Solana.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/SPOOKED!.gif', alt='')
+              .header SPOOKED!
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 8000 INR
+                .supply
+                  strong Total Supply: 
+                  | 1499
+                .date
+                  strong Date: 
+                  | 7th July
+                .time
+                  strong Time: 
+                  | 11.30 pm
+                .icons
+                  a(href='https://twitter.com/USPOOKEDME', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              input(type='number', min='1', max='5', value='1')
+              button.btn Mint
+          br
+          .desc
+            | At SPOOKED! we believe that NFT technology will create the next generation of household names and
+            | celebrities by giving a voice to the PFP.
+    section.upcomingDrop
+      h1 Upcoming Launches
+      .container
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Shrouded Playground.jpg', alt='')
+              .header Shrouded Playground
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 9000 INR
+                .supply
+                  strong Total Supply: 
+                  | 7777
+                .date
+                  strong Date: 
+                  | 8th July
+                .time
+                  strong Time: 
+                  | 10.30 pm
+                .icons
+                  a(href='https://twitter.com/ShroudedNFT', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 25h 08m
+          br
+          .desc
+            | Shrouded Playground is a lifestyle based art, utilising a collection of open minded mavericks,
+            | eccentrics and gangsters to takeover the Solana Playground.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Daemonverse.gif', alt='')
+              .header Daemonverse
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 6000 INR
+                .supply
+                  strong Total Supply: 
+                  | 2021
+                .date
+                  strong Date: 
+                  | 9th July
+                .time
+                  strong Time: 
+                  | 12.30 am
+                .icons
+                  a(href='https://twitter.com/DaemonLabs', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 28h 1m
+          br
+          .desc
+            | 2021 Daemons are building the art &amp; development branch of &apos;verse. The brand currently consists of &apos;verse gallery and now &apos;verse studio
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Netrunner.jpg', alt='')
+              .header Netrunner
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 6000 INR
+                .supply
+                  strong Total Supply: 
+                  | 4646
+                .date
+                  strong Date: 
+                  | 9th July
+                .time
+                  strong Time: 
+                  | 2.00 am
+                .icons
+                  a(href='https://twitter.com/SolNetRunner', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 30h 5m
+          br
+          .desc
+            | 4,646 Cyberpunks running on Solana, where art meets utility. Building your all in one portfolio tracker and tax reporting dap
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Internet Foxes.gif', alt='')
+              .header Internet Foxes
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 2000 INR
+                .supply
+                  strong Total Supply: 
+                  | 4500
+                .date
+                  strong Date: 
+                  | 10th July
+                .time
+                  strong Time: 
+                  | 12.30 am
+                .icons
+                  a(href='https://twitter.com/InternetFoxes', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 37h 02m
+          br
+          .desc
+            | &ldquo;Bears are Okay, Cats are on crack. The Foxes don&apos;t give a shit about any of that. We&apos;re here as a Degen Den to get you energized, drippified, and degenified.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/NexiLabs.png', alt='')
+              .header NexiLabs
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 6000 INR
+                .supply
+                  strong Total Supply: 
+                  | 3333
+                .date
+                  strong Date: 
+                  | 10th July
+                .time
+                  strong Time: 
+                  | 10.30 pm
+                .icons
+                  a(href='https://twitter.com/NexiLabs', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 44h 7m
+          br
+          .desc
+            | Nexi Labs is a All-In-One Defi Platform that integrates Solana wallets into Discord. Built-in Discord Snipers, Wallets, Customized Raffle systems and more
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Realized Rhapsody.gif', alt='')
+              .header Realized Rhapsody
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 1000 INR
+                .supply
+                  strong Total Supply: 
+                  | 7900
+                .date
+                  strong Date: 
+                  | 10th July
+                .time
+                  strong Time: 
+                  | 11.30 pm
+                .icons
+                  a(href='https://twitter.com/RelizedRhapsody', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 45h 9m
+          br
+          .desc
+            | Realized Rhapsody turns chaos into order by transforming messy Solana blockchain data into actionable signals in dashboards.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Baked Berserk.gif', alt='')
+              .header Baked Berserk
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 7000 INR
+                .supply
+                  strong Total Supply: 
+                  | 8888
+                .date
+                  strong Date: 
+                  | 13th July
+                .time
+                  strong Time: 
+                  | 9.30 pm
+                .icons
+                  a(href='https://twitter.com/BakedBerserk', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 55h 4m
+          br
+          .desc
+            | They came from lands far from beyond the northern mist...
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/NFT Leaguez.gif', alt='')
+              .header NFT Leaguez
+            #child2.child2
+              .content
+                .mintprice
+                  strong Mint Price: 
+                  | 6000 INR
+                .supply
+                  strong Total Supply: 
+                  | 1020
+                .date
+                  strong Date: 
+                  | 17th July
+                .time
+                  strong Time: 
+                  | 8.00 pm
+                .icons
+                  a(href='https://twitter.com/nftleaguez', target='_blank')
+                    i.fa-brands.fa-twitter
+                  a(href='')
+                    i.fa-brands.fa-discord
+                  a(href='')
+                    i.fa-solid.fa-globe
+              button.btn
+                i.fa-regular.fa-hourglass
+                |  You Can Mint in 80h 6m
+          br
+          .desc
+            | Never has a play-to-earn game been so exciting. NFT Leaguez is ready to transform the industry. Are you ready to play?
+    footer.footer
+      .flex
+        .first
+          .footer-logo
+            a(href='/')
+              img(src='./img/logo.png', alt='logo')
+          .contact-phn
+            strong Phone: 
+            | +91 8869070495
+          .contact-email
+            strong Email: 
+            | sakshamag.work@gmail.com, s7agarwal7@gmail.com
+          .contact-adrss
+            strong Address: 
+            | Agra, Uttar Pradesh
+        .second
+          div
+            h4 About
+            div
+              a(href='/') Home
+            div
+              a.active(href='/launchpad') Launchpad
+            div
+              a(href='/collections') Collections
+            div
+              a(href='/dropcal') Drop Calendar
+            div
+              a(href='/about') About
+        .third
+          .follow
+            h4 Follow
+            div
+              a(href='//linkedin.com/in/saksham-agarwal-560b671a2' target='_blank')
+                i.fa-brands.fa-linkedin
+            div
+              a(href='https://github.com/WhoSaksham', target='_blank')
+                i.fa-brands.fa-github
+            div
+              a(href='https://instagram.com/who.saksham', target='_blank')
+                i.fa-brands.fa-instagram
+            div
+              a(href='https://twitter.com/who_saksham', target='_blank')
+                i.fa-brands.fa-twitter
+            div
+              a(href='/', target='_blank')
+                i.fa-solid.fa-globe
+        .fourth
+          span Made with
+          br
+          img(src='./img/Finger_heart.png', alt='')
+          br
+          span by Saksham
+      .copyright &copy; 2022 Dreamplace - NFT Marketplace || All rights reserved  

@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    scroll-behavior: smooth;
+    /* background-color: #c36b8452; */
+    /* background-color: antiquewhite; */
+    /* background-color: #ccd5f0; */
+    /* background-color: #d6d9e5; */
+    background-color: #fbeec18e;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 56px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 50px;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 50px;
+}
+
+
+h4 {
+    font-size: auto;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    margin: 15px 0 20px 0;
+}
+
+/* header styling */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #165954;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 10px 80px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    overflow-block: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 7px;
+    width: 190px;
+    padding: 1px;
+    border: 0.5px solid black;
+}
+
+.logo img:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #FEE715FF;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    bottom: -4px;
+    left: 20px;
+    height: 2px;
+    position: absolute;
+    background: #FEE715FF;
+}
+
+/* Banner styling */
+
+#banner {
+    background: #165954;
+    display: flex;
+    padding: 30px 0 25px 100px;
+    justify-content: space-between;
+    color: aliceblue;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+#banner .banner-text h1,
+#banner .banner-text h3 {
+    display: block;
+    width: 222px;
+    margin: auto;
+}
+
+#banner .banner-text h3{
+    padding-left: 26.3px;
+}
+
+#banner .bg {
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+#banner .bg img {
+    height: 180px;
+    width: 400px;
+    border: 1.9px solid antiquewhite;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+#banner .bg img:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
+}
+
+#banner h1,
+#banner h2,
+#banner h3 {
+    margin: 7px 0;
+    font-family: 'Playfair Display SC', serif;
+}
+
+/* section styling */
+
+.NewtoNft,
+.popularProjects1hr,
+.popularProjects24hrs,
+.popularProjects7days,
+.popularProjects30days {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 550;
+}
+
+section .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 20px;
+}
+
+section header {
+    padding: 20px 0 0 45px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #165954;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.container .parent {
+    display: block;
+    width: 222px;
+    padding: 20px 0;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    background-color: #c5cbe35d;
+    color: #f75435;
+    border: 1.7px solid #165954;
+    transition: 0.2s ease;
+}
+
+.container .parent:hover {
+    box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.6);
+}
+
+.card-img img {
+    display: block;
+    height: 160px;
+    width: 180px;
+    margin: auto;
+    margin-bottom: 17px;
+    border: 2px solid gray;
+    border-radius: 18px;
+    transition: 0.2s ease;
+}
+
+.card-img img:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.parent .card-desc {
+    display: block;
+    width: 222px;
+    margin: auto;
+    text-align: center;
+}
+
+.parent .btn {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    font-size: 15px;
+    border-radius: 7px;
+    line-height: 1;
+    border: 1px solid #165954;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #165954;
+    background-color: #f7c3ce71;
+    transition: 0.2s ease;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.parent .btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #efefef;
+    transform: scale(1.1);
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    border: 1px solid aliceblue;
+}
+
+footer {
+    padding: 20px 0 0 40px;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #165954;
+    line-height: 1.7;
+    color: aliceblue;
+    height: 290px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer .flex {
+    display: flex;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+    line-height: 1.7;
+}
+
+footer a:hover,
+footer a.active {
+    color: #FEE715FF;
+
+}
+
+footer h4 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FEE715FF;
+}
+
+.footer-logo img {
+    height: 50px;
+    border-radius: 7px;
+    width: 190px;
+    padding: 1px;
+    margin-bottom: 10px;
+    border: 0.5px solid black;
+}
+
+.footer-logo img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+}
+
+.first {
+    margin-top: 35px;
+}
+
+.first strong{
+    color: #FEE715FF;
+}
+
+.second {
+    margin: 5px 88px 0 133px;
+    padding: 5px 20px 0 20px;
+}
+
+.third {
+    margin: 5px 100px 0 33px;
+    padding: 5px 20px;
+}
+
+.third a {
+    margin-left: 15px;
+}
+
+
+.third .follow {
+    display: block;
+    width: 50px;
+    margin: auto;
+}
+
+.third .follow a {
+    font-size: 18px;
+
+}
+
+.third .follow a:hover {
+    color: #FEE715FF;
+}
+
+.fourth {
+    margin: 2.5% 0 0 33px;
+}
+
+.fourth span {
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.fourth img {
+    height: 100px;
+    width: 100px;
+    transition: 0.3s ease;
+}
+
+.fourth img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    padding: 15px 0 2px 0;
+    margin: 5px 0 5px 26.5%;
+    font-size: 18px;
+}

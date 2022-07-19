@@ -1,0 +1,22 @@
+extends template.pug
+
+block head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title 404 - Page not found
+    link(rel='stylesheet', href='./css/404.css')
+    link(rel='icon', type='image/x-icon', href='./img/favicon_logo.jpg')
+
+block content
+    section.container
+      section.notFound
+        .img
+          img(src='https://assets.codepen.io/5647096/backToTheHomepage.png', alt='Back to the Homepage')
+          img(src='https://assets.codepen.io/5647096/Delorean.png', alt='')
+        .text
+          h1 404
+          h2 PAGE NOT FOUND
+          h3 BACK TO HOME?
+          a.yes(href='/') YES
+          a.no(href='') NO

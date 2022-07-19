@@ -1,0 +1,465 @@
+extends template.pug
+
+block head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Dreamplace - NFT Marketplace
+    link(rel='stylesheet', href='./css/index.css')
+    link(href='https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap", rel="stylesheet")
+    script(src='https://kit.fontawesome.com/827cbaa6bf.js', crossorigin='anonymous')
+    link(rel='icon', type='image/x-icon', href='./img/favicon_logo.jpg')
+
+block content
+    section#header
+      a.logo(href='/')
+        img(src='./img/logo.png', alt='logo')
+      div
+        ul.navbar
+          li
+            a.active(href='/') Home
+          li
+            a(href='/launchpad') Launchpad
+          li
+            a(href='/collections') Collections
+          li
+            a(href='/dropcal') Drop Calendar
+          li
+            a(href='/about') About
+    section#banner
+      .banner-text
+        h1 Dreamplace
+        h2 One of the Leading NFT Marketplace
+        h3 Deep Dive Now
+      .bg
+        img(src='./img/bg.jpg')
+    section.NewtoNft
+      header New to NFTs?
+      .container
+        .parent
+          .card-img
+            .img
+              img(src='./img/intro-to-nft.jpg')
+          .card-desc
+            h4 Intro To NFTs
+            a(href='https://contenthub.magiceden.io/playbook', target='_blank')
+              button.btn Details
+        .parent
+          .card-img
+            .img
+              img(src='./img/video-tutorial.jpg')
+          .card-desc
+            h4 Video Tutorials
+            a(href='https://www.youtube.com/playlist?list=PLNpjkIJQHD7HoOqtuQITZoR0CNPZbv5YU', target='_blank')
+              button.btn Details
+        .parent
+          .card-img
+            .img
+              img(src='./img/newsletter.jpg')
+          .card-desc
+            h4 Newsletter
+            a(href='https://contenthub.magiceden.io/the-future-of-gaming-is-here?utm_source=email&utm_medium=blog&utm_term=games-announcement&utm_content=&utm_campaign=games-marketing', target='_blank')
+              button.btn Details
+        .parent
+          .card-img
+            .img
+              img(src='./img/product-update.jpg')
+          .card-desc
+            h4 Product Update
+            a(href='https://www.youtube.com/watch?v=1Gf5LK1upmw', target='_blank')
+              button.btn Details
+        .parent
+          .card-img
+            .img
+              img(src='./img/Top 5 Solana Games.jpg')
+          .card-desc
+            h4 Top 5 Solana Games
+            a(href='https://www.youtube.com/watch?v=0dfyPKU00xE&ab_channel=MagicEden', target='_blank')
+              button.btn Details
+    section.popularProjects1hr
+      header  Popular Projects (Last 1Hr) 
+      .container
+        .parent
+          .card-img
+            .img
+              img(src='./img/trppin-ape-tribe.jpeg')
+          .card-desc
+            h4 Trippin&apos; Ape Tribe
+            a(href='https://magiceden.io/marketplace/trippin_ape_tribe', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/bohemia.jpeg')
+          .card-desc
+            h4 Bohemia
+            a(href='https://magiceden.io/marketplace/bohemia_', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/okay-bears.png')
+          .card-desc
+            h4 Okay Bears
+            a(href='https://magiceden.io/marketplace/okay_bears', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/degen-town.gif')
+          .card-desc
+            h4 Degen Town
+            a(href='https://magiceden.io/marketplace/degentown', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/cets-on-creck.jpeg')
+          .card-desc
+            h4 Cets on Creck
+            a(href='https://magiceden.io/marketplace/cets_on_creck', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/the-catalina-whale-mixer.png')
+          .card-desc
+            h4 The Catalina Whale Mixer
+            a(href='https://magiceden.io/marketplace/the_catalina_whale_mixer', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/primates.gif')
+          .card-desc
+            h4 Primates
+            a(href='https://magiceden.io/marketplace/primates', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/aurory.png')
+          .card-desc
+            h4 Aurory
+            a(href='https://magiceden.io/marketplace/aurory', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/sphynx-underground-society.gif')
+          .card-desc
+            h4 Sphynx Underground Society
+            a(href='https://magiceden.io/marketplace/sphynx_underground_society', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/udder-chaos.jpeg')
+          .card-desc
+            h4 Udder Chaos
+            a(href='https://magiceden.io/marketplace/udder_chaos', target='_blank')
+              button.btn Explore
+    section.popularProjects24hrs
+      header  Popular Projects (Last 24Hrs) 
+      .container
+        .parent
+          .card-img
+            .img
+              img(src='./img/justape.gif')
+          .card-desc
+            h4 Just Ape
+            a(href='https://magiceden.io/marketplace/justape', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Bubblegoose-Ballers.gif')
+          .card-desc
+            h4 Bubblegoose Ballers
+            a(href='https://magiceden.io/marketplace/bubblegoose_ballers', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Gothic-degens.jpeg')
+          .card-desc
+            h4 Gothic Degens
+            a(href='https://magiceden.io/marketplace/gothic_degens', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/monsta-scientist.jpeg')
+          .card-desc
+            h4 Monsta Scientist
+            a(href='https://magiceden.io/marketplace/monsta_scientist', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Genopets.jpeg')
+          .card-desc
+            h4 Genopets
+            a(href='https://magiceden.io/marketplace/genopets', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Famous Fox Federation.png')
+          .card-desc
+            h4 Famous Fox Federation
+            a(href='https://magiceden.io/marketplace/famous_fox_federation', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/communi3.png')
+          .card-desc
+            h4 Communi3: Mad Scientists
+            a(href='https://magiceden.io/marketplace/communi3', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/great-goats.png')
+          .card-desc
+            h4 Great Goats
+            a(href='https://magiceden.io/marketplace/great__goats', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/quantum-traders.jpeg')
+          .card-desc
+            h4 Quantum Traders
+            a(href='https://magiceden.io/marketplace/quantum_traders', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Midnight Panthers.gif')
+          .card-desc
+            h4 Midnight Panthers
+            a(href='https://magiceden.io/marketplace/midnight_panthers', target='_blank')
+              button.btn Explore
+    section.popularProjects7days
+      header  Popular Projects (Last 7Days) 
+      .container
+        .parent
+          .card-img
+            .img
+              img(src='./img/Delysid Kiddos.jpg')
+          .card-desc
+            h4 Delysid Kiddos
+            a(href='https://magiceden.io/marketplace/delysid_kiddos', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/DeGods.jpeg')
+          .card-desc
+            h4 DeGods
+            a(href='https://magiceden.io/marketplace/degods', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Blocksmith Labs.gif')
+          .card-desc
+            h4 Blocksmith Labs
+            a(href='https://magiceden.io/marketplace/blocksmith_labs', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Solana Monkey Business.jpeg')
+          .card-desc
+            h4 Solana Monkey Business
+            a(href='https://magiceden.io/marketplace/solana_monkey_business', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Boryoku Dragonz.jpeg')
+          .card-desc
+            h4 Boryoku Dragonz
+            a(href='https://magiceden.io/marketplace/boryoku_dragonz', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Degenerate Trash Pandas.png')
+          .card-desc
+            h4 Degenerate Trash Pandas
+            a(href='https://magiceden.io/marketplace/degenerate_trash_pandas', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Nightmare Project.jpeg')
+          .card-desc
+            h4 Nightmare Project
+            a(href='https://magiceden.io/marketplace/nightmareprjct', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/CopeTown.jpg')
+          .card-desc
+            h4 CopeTown
+            a(href='https://magiceden.io/marketplace/copetown', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/OG Atadians.jpeg')
+          .card-desc
+            h4 OG Atadians
+            a(href='https://magiceden.io/marketplace/atadians', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Degenerate Ape Academy.png')
+          .card-desc
+            h4 Degenerate Ape Academy
+            a(href='https://magiceden.io/marketplace/degenerate_ape_academy', target='_blank')
+              button.btn Explore
+    section.popularProjects30days
+      header  Popular Projects (Last 30Days) 
+      .container
+        .parent
+          .card-img
+            .img
+              img(src='./img/GhostKidDAO.jpeg')
+          .card-desc
+            h4 GhostKidDAO
+            h4
+              a(href='https://magiceden.io/marketplace/ghost_kid_dao', target='_blank')
+                button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/okay-bears.png')
+          .card-desc
+            h4 Okay Bears
+            a(href='https://magiceden.io/marketplace/okay_bears', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Shadowy Super Coder DAO.jpeg')
+          .card-desc
+            h4 Shadowy Super Coder DAO
+            a(href='https://magiceden.io/marketplace/shadowy_super_coder_dao', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Boryoku Dragonz.jpeg')
+          .card-desc
+            h4 Boryoku Dragonz
+            a(href='https://magiceden.io/marketplace/boryoku_dragonz', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/DeGods.jpeg')
+          .card-desc
+            h4 DeGods
+            a(href='https://magiceden.io/marketplace/degods', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Cubist Collective.jpg')
+          .card-desc
+            h4 Cubist Collective
+            a(href='https://magiceden.io/marketplace/cubistnft', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/primates.gif')
+          .card-desc
+            h4 Primates
+            a(href='https://magiceden.io/marketplace/primates', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/trppin-ape-tribe.jpeg')
+          .card-desc
+            h4 Trippin&apos; Ape Tribe
+            a(href='https://magiceden.io/marketplace/trippin_ape_tribe', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/Solana Monkey Business.jpeg')
+          .card-desc
+            h4 Solana Monkey Business
+            a(href='https://magiceden.io/marketplace/solana_monkey_business', target='_blank')
+              button.btn Explore
+        .parent
+          .card-img
+            .img
+              img(src='./img/the-catalina-whale-mixer.png')
+          .card-desc
+            h4 The Catalina Whale Mixer
+            a(href='https://magiceden.io/marketplace/the_catalina_whale_mixer', target='_blank')
+              button.btn Explore
+    footer.footer
+      .flex
+        .first
+          .footer-logo
+            a(href='/')
+              img(src='./img/logo.png', alt='logo')
+          .contact-phn
+            strong Phone: 
+            | +91 8869070495
+          .contact-email
+            strong Email: 
+            | sakshamag.work@gmail.com, s7agarwal7@gmail.com
+          .contact-adrss
+            strong Address: 
+            | Agra, Uttar Pradesh
+        .second
+          div
+            h4 About
+            div
+              a.active(href='/') Home
+            div
+              a(href='/launchpad') Launchpad
+            div
+              a(href='/collections') Collections
+            div
+              a(href='/dropcal') Drop Calendar
+            div
+              a(href='/about') About
+        .third
+          .follow
+            h4 Follow
+            div
+              a(href='//linkedin.com/in/saksham-agarwal-560b671a2' target='_blank')
+                i.fa-brands.fa-linkedin
+            div
+              a(href='https://github.com/WhoSaksham', target='_blank')
+                i.fa-brands.fa-github
+            div
+              a(href='https://instagram.com/who.saksham', target='_blank')
+                i.fa-brands.fa-instagram
+            div
+              a(href='https://twitter.com/who_saksham', target='_blank')
+                i.fa-brands.fa-twitter
+            div
+              a(href='/', target='_blank')
+                i.fa-solid.fa-globe
+        .fourth
+          span Made with
+          br
+          img(src='./img/Finger_heart.png', alt='')
+          br
+          span by Saksham
+      .copyright &copy; 2022 Dreamplace - NFT Marketplace || All rights reserved 

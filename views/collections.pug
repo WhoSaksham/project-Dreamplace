@@ -1,0 +1,496 @@
+extends template.pug
+
+block head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Collections - Dreamplace
+    link(rel='stylesheet', href='./css/collections.css')
+    script(src='https://kit.fontawesome.com/827cbaa6bf.js', crossorigin='anonymous')
+    link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap", rel="stylesheet")
+    link(rel='icon', type='image/x-icon', href='./img/favicon_logo.jpg')
+
+block content
+    section#header
+      a.logo(href='/')
+        img(src='./img/logo.png', alt='logo')
+      div
+        ul.navbar
+          li
+            a(href='/') Home
+          li
+            a(href='/launchpad') Launchpad
+          li
+            a.active(href='/collections') Collections
+          li
+            a(href='/dropcal') Drop Calendar
+          li
+            a(href='/about') About
+    section.collections
+      h1 OG Collections
+      .container
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/DeGods.jpeg', alt='')
+              .header DeGods
+            #child2.child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 9 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 8.9 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 10000
+                .listed
+                  strong Total Listed: 
+                  | 134
+                .holders
+                  strong Unique Holders: 
+                  | 4331
+              a(href='https://magiceden.io/marketplace/degods', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | A collection of degenerates, punks, and misfits. Gods of the metaverse &amp; masters of our own
+            | universe. DeGods can be converted to DeadGods with DUST.
+        .parent
+          .flex
+            .child1
+              .img
+                img(src='./img/okay-bears.png', alt='')
+              .header Okay Bears
+            .child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 3 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 3.2 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 10000
+                .listed
+                  strong Total Listed: 
+                  | 769
+                .holders
+                  strong Unique Holders: 
+                  | 5664
+              a(href='https://magiceden.io/marketplace/okay_bears', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | Okay Bears is a culture shift. A clean collection of 10,000 diverse bears building a virtuous
+            | community that will transcend the internet into the real world.
+        .parent
+          .flex
+            .child1
+              .img
+                img(src='./img/Solana Monkey Business.jpeg', alt='')
+              .header Solana Monkey Business
+            .child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 5.6 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 5.5 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 5000
+                .listed
+                  strong Total Listed: 
+                  | 179
+                .holders
+                  strong Unique Holders: 
+                  | 2783
+              a(href='https://magiceden.io/marketplace/solana_monkey_business', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | SMB is a collection of 5000 unique randomly generated SolanaMonkeys stored on the blockchain. With
+            | their accessibility-oriented design.
+        .parent
+          .flex
+            .child1
+              .img
+                img(src='./img/Degenerate Ape Academy.png', alt='')
+              .header Degenerate Ape Academy
+            .child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 1.45 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 1.4 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 10000
+                .listed
+                  strong Total Listed: 
+                  | 663
+                .holders
+                  strong Unique Holders: 
+                  | 4553
+              a(href='https://magiceden.io/marketplace/degenerate_ape_academy', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | Our mission here at the academy is simple: Take 10,000 of the smoothest brained apes, put them all
+            | in one location and let the mayhem ensue.
+        .parent
+          .flex
+            .child1
+              .img
+                img(src='./img/Blocksmith Labs.gif', alt='')
+              .header Blocksmith Labs
+            .child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 1.9 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 1.85 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 4400
+                .listed
+                  strong Total Listed: 
+                  | 70
+                .holders
+                  strong Unique Holders: 
+                  | 2737
+              a(href='https://magiceden.io/marketplace/blocksmith_labs', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | Blocksmith Labs is a team of experienced engineers aiming to solve real problems on Solana, whilst
+            | providing utility to our holders. We are building a community of builders.
+        .parent
+          .flex
+            .child1
+              .img
+                img(src='./img/cets-on-creck.jpeg', alt='')
+              .header Cets on Creck
+            .child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 1.45 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 1.4 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 7000
+                .listed
+                  strong Total Listed: 
+                  | 258
+                .holders
+                  strong Unique Holders: 
+                  | 4199
+              a(href='https://magiceden.io/marketplace/cets_on_creck', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | It&apos;s just a bunch of crecked cets, who&apos;re upto a whole of rat shit that are livin&apos;, and chillin&apos; and
+            | vibin&apos; together. They&apos;re picking bullshit catfights, posting their own mugshots.
+        .parent
+          .flex
+            .child1
+              .img
+                img(src='./img/communi3.png', alt='')
+              .header Communi3: Mad Scientists
+            .child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 1 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 1 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 5000
+                .listed
+                  strong Total Listed: 
+                  | 184
+                .holders
+                  strong Unique Holders: 
+                  | 2829
+              a(href='https://magiceden.io/marketplace/communi3', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | 5,001 Mad Scientists creating the formula for vibrant, engaged, and collaborative communities
+            | through technology.
+        .parent
+          .flex
+            .child1
+              .img
+                img(src='./img/Famous Fox Federation.png', alt='')
+              .header Famous Fox Federation
+            .child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 1 Lakh INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 1 Lakh INR
+                .supply
+                  strong Total Supply: 
+                  | 7800
+                .listed
+                  strong Total Listed: 
+                  | 237
+                .holders
+                  strong Unique Holders: 
+                  | 4282
+              a(href='https://magiceden.io/marketplace/famous_fox_federation', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | The Famous Fox Federation, an independent organization of the most fabulously famous foxes on the
+            | Blockchain.
+      a(href='https://magiceden.io/marketplace', target='_blank')
+        button.more More
+    section.newCollections
+      h1 Newly Added Collections
+      .container
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/The Resurrected.gif', alt='')
+              .header The Resurrected
+            #child2.child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 30000 INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 27000 INR
+                .supply
+                  strong Total Supply: 
+                  | 4268
+                .listed
+                  strong Total Listed: 
+                  | 148
+                .holders
+                  strong Unique Holders: 
+                  | 2672
+              a(href='https://magiceden.io/marketplace/the_resurrected', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | Those who were sacrificed, have proven their loyalty and have been Reborn. The Resurrected are a
+            | collection of 4268 Degens.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Kraken.gif', alt='')
+              .header Kraken
+            #child2.child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 27000 INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 28000 INR
+                .supply
+                  strong Total Supply: 
+                  | 1000
+                .listed
+                  strong Total Listed: 
+                  | 16
+                .holders
+                  strong Unique Holders: 
+                  | 546
+              a(href='https://magiceden.io/marketplace/kraken', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | 1,000 NFTs Made in the Cove. Partnered with Xenode and Chippies, they create an on-chain sniping bot
+            | called the Kraken... Destroying any NFT collection in sight.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Infected Mob.gif', alt='')
+              .header Infected Mob
+            #child2.child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 5200 INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 5000 INR
+                .supply
+                  strong Total Supply: 
+                  | 7777
+                .listed
+                  strong Total Listed: 
+                  | 1359
+                .holders
+                  strong Unique Holders: 
+                  | 4378
+              a(href='https://magiceden.io/marketplace/infected_mob', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | A science experiment gone completely wrong. 7777 deranged and savage mobsters wreaking havoc in the
+            | streets of Solana.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Attack on Meta.jpeg', alt='')
+              .header Attack on Meta
+            #child2.child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 1100 INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 1400 INR
+                .supply
+                  strong Total Supply: 
+                  | 3333
+                .listed
+                  strong Total Listed: 
+                  | 40
+                .holders
+                  strong Unique Holders: 
+                  | 2348
+              a(href='https://magiceden.io/marketplace/aom', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | Attack On Meta is for lovers of anime &amp; hip-hop music. Holders will have exclusive access to its
+            | album, streetwear, comics, and more. The project consists of 3,333 unique pieces of artwork.
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Scrappy Boyz.gif', alt='')
+              .header Scrappy Boyz
+            #child2.child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 3200 INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 4750 INR
+                .supply
+                  strong Total Supply: 
+                  | 4000
+                .listed
+                  strong Total Listed: 
+                  | 20
+                .holders
+                  strong Unique Holders: 
+                  | 3089
+              a(href='https://magiceden.io/marketplace/scrappyboyz', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | 4000 meme Boyz on the solana blockchain burning scrap with every purchase
+        .parent
+          .flex
+            #child1.child1
+              .img
+                img(src='./img/Netrunner.jpg', alt='')
+              .header Netrunner
+            #child2.child2
+              .content
+                .floor
+                  strong Floor Price: 
+                  | 11000 INR
+                .avg-sale
+                  strong Avg Sale: 
+                  | 9700 INR
+                .supply
+                  strong Total Supply: 
+                  | 4646
+                .listed
+                  strong Total Listed: 
+                  | 491
+                .holders
+                  strong Unique Holders: 
+                  | 2935
+              a(href='https://magiceden.io/marketplace/netrunner', target='_blank')
+                button.btn Details
+          br
+          .desc
+            | 4,646 Cyberpunks running on Solana, where art meets utility. Building your all in one portfolio
+            | tracker and tax reporting dapp.
+      a(href='https://magiceden.io/collections?type=new', target='_blank')
+        button.more More
+    footer.footer
+      .flex
+        .first
+          .footer-logo
+            a(href='/')
+              img(src='./img/logo.png', alt='logo')
+          .contact-phn
+            strong Phone: 
+            | +91 8869070495
+          .contact-email
+            strong Email: 
+            | sakshamag.work@gmail.com, s7agarwal7@gmail.com
+          .contact-adrss
+            strong Address: 
+            | Agra, Uttar Pradesh
+        .second
+          div
+            h4 About
+            div
+              a(href='/') Home
+            div
+              a(href='/launchpad') Launchpad
+            div
+              a.active(href='/collections') Collections
+            div
+              a(href='/dropcal') Drop Calendar
+            div
+              a(href='/about') About
+        .third
+          .follow
+            h4 Follow
+            div
+              a(href='//linkedin.com/in/saksham-agarwal-560b671a2' target='_blank')
+                i.fa-brands.fa-linkedin
+            div
+              a(href='https://github.com/WhoSaksham', target='_blank')
+                i.fa-brands.fa-github
+            div
+              a(href='https://instagram.com/who.saksham', target='_blank')
+                i.fa-brands.fa-instagram
+            div
+              a(href='https://twitter.com/who_saksham', target='_blank')
+                i.fa-brands.fa-twitter
+            div
+              a(href='/', target='_blank')
+                i.fa-solid.fa-globe
+        .fourth
+          span Made with
+          br
+          img(src='./img/Finger_heart.png', alt='')
+          br
+          span by Saksham
+      .copyright &copy; 2022 Dreamplace - NFT Marketplace || All rights reserved

@@ -1,0 +1,102 @@
+extends template.pug
+
+block head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title About - Dreamplace
+    link(rel='stylesheet', href='./css/about.css')
+    script(src='../src/app.js')
+    script(src='https://kit.fontawesome.com/827cbaa6bf.js', crossorigin='anonymous')
+    link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap", rel="stylesheet")
+    link(rel='icon', type='image/x-icon', href='./img/favicon_logo.jpg')
+
+block content
+    section#header
+      a.logo(href='/')
+        img(src='./img/logo.png', alt='logo')
+      div
+        ul.navbar
+          li
+            a(href='/') Home
+          li
+            a(href='/launchpad') Launchpad
+          li
+            a(href='/collections') Collections
+          li
+            a(href='/dropcal') Drop Calendar
+          li
+            a.active(href='/about') About
+    section.about
+      h1 About Dreamplace
+      .container
+        p
+          span Dreamplace 
+          | is a NFT Marketplace where we can trade (Buy/Sell) NFTs (referred to as Non-fungible Tokens). Dreamplace is a project made by Saksham. He get the idea to make this project by seeing 
+          a(href='https://MagicEden.io', target='_blank') MagicEden,  
+          | which is the largest NFT Marketplace on Solana network. Since this is my first and a beginner level project, so eventually by clicking on the links, you'll land up on MageEden's website accoding to the respective reqested query. I'm looking forward to develop this project further in near future.
+        p
+          strong Disclaimer: 
+          | Cryptocurrencies and NFTs are unregulated and are highly volatile in nature. No authority is responsible for your any kind of loss. NFA (Not Financial Advice) always DYOR (Do Your Own Research).
+    section.contactForm
+      h1 Contact
+      p Want to connect with me? Fill the form below and I'll get back to you ASAP! &#x1F609;
+      form.contact(action='/about', method='post')
+        input#name(name='name',type='text', placeholder='Enter your Name')
+        input#email(name='email',type='email', placeholder='Enter your Email Address')
+        input#phone(name='phone',type='number', placeholder='Enter your Contact Number')
+        textarea#desc(name='desc', cols='20', rows='7', placeholder='Enter your Concern!')
+        button.btn Submit
+    footer.footer
+      .flex
+        .first
+          .footer-logo
+            a(href='/')
+              img(src='./img/logo.png', alt='logo')
+          .contact-phn
+            strong Phone: 
+            | +91 8869070495
+          .contact-email
+            strong Email: 
+            | sakshamag.work@gmail.com, s7agarwal7@gmail.com
+          .contact-adrss
+            strong Address: 
+            | Agra, Uttar Pradesh
+        .second
+          div
+            h4 About
+            div
+              a(href='/') Home
+            div
+              a(href='/launchpad') Launchpad
+            div
+              a(href='/collections') Collections
+            div
+              a(href='/dropcal') Drop Calendar
+            div
+              a.active(href='/about') About
+        .third
+          .follow
+            h4 Follow
+            div
+              a(href='//linkedin.com/in/saksham-agarwal-560b671a2' target='_blank')
+                i.fa-brands.fa-linkedin
+            div
+              a(href='https://github.com/WhoSaksham', target='_blank')
+                i.fa-brands.fa-github
+            div
+              a(href='https://instagram.com/who.saksham', target='_blank')
+                i.fa-brands.fa-instagram
+            div
+              a(href='https://twitter.com/who_saksham', target='_blank')
+                i.fa-brands.fa-twitter
+            div
+              a(href='/', target='_blank')
+                i.fa-solid.fa-globe
+        .fourth
+          span Made with
+          br
+          img(src='./img/Finger_heart.png', alt='')
+          br
+          span by Saksham
+      .copyright &copy; 2022 Dreamplace - NFT Marketplace || All rights reserved

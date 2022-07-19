@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #fbeec18e;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar styling */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #165954;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    padding: 10px 80px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    overflow-block: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 7px;
+    width: 190px;
+    padding: 1px;
+    border: 0.5px solid black;
+}
+
+.logo img:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #FEE715FF;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    bottom: -4px;
+    left: 20px;
+    height: 2px;
+    position: absolute;
+    background: #FEE715FF;
+}
+
+/* body styling */
+
+section {
+    padding: 10px;
+}
+
+section h1 {
+    font-size: 30px;
+    color: #165954;
+    padding: 0 0 10px 45px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.collections h1{
+    padding-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 0 20px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 0 10px 0 80px;
+    border-radius: 20px;
+    height: 350px;
+    width: 600px;
+    border: 2px solid #165954;
+    background-color: #c5cbe35d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.parent:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+section .header,
+.child2 .content{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.child1 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-top: 15px;
+}
+
+.child1 img {
+    display: block;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.child1 img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.child1 .header {
+    display: block;
+    width: auto;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 550;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #165954;
+}
+
+.child2 {
+    margin-left: 55px;
+    padding: 18px 0 10px 0;
+    height: 200px;
+}
+
+.child2 .content {
+    display: block;
+    width: 250px;
+    margin: auto;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+}
+
+.child2 .content strong{
+    color: #165954;
+}
+
+.child2 .btn {
+    margin: 15px 0 0 35px;
+    padding: 7px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 15px;
+    line-height: 1;
+    border: 1px solid #165954;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #165954;
+    background-color: #f7c3ce71;
+    transition: 0.2s ease;
+}
+
+.child2 .btn:hover,
+.more:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #efefef;
+    font-weight: 500;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    border: 1px solid aliceblue;
+}
+
+.desc {
+    font-size: 18px;
+    width: 473px;
+    padding: 0 15px 15px 0;
+    color: #CC313D;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+
+.more {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 7px;
+    width: 77px;
+    height: 45px;
+    border: 1px solid #165954;
+    border-radius: 10px;
+    color: #165954;
+    background-color: #f7c3ce71;
+    font-size: 15px;
+    line-height: 1.1;
+    transition: 0.2s ease;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+/* footer styling */
+
+footer {
+    padding: 20px 0 0 40px;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #165954;
+    line-height: 1.7;
+    color: aliceblue;
+    height: 290px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer .flex {
+    display: flex;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+    line-height: 1.7;
+}
+
+footer a:hover,
+footer a.active {
+    color: #FEE715FF;
+
+}
+
+footer h4 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FEE715FF;
+}
+
+.footer-logo img {
+    height: 50px;
+    border-radius: 7px;
+    width: 190px;
+    padding: 1px;
+    margin-bottom: 10px;
+    border: 0.5px solid black;
+}
+
+.footer-logo img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+}
+
+.first {
+    margin-top: 30px;
+}
+
+.first strong{
+    color: #FEE715FF;
+}
+
+.second {
+    margin: 0 100px 0 77px;
+    padding: 0 20px 0 20px;
+}
+
+.third {
+    margin: 7px 77px 0 0px;
+    padding: 5px 10px;
+}
+
+.third a {
+    margin-left: 15px;
+}
+
+.third .follow a {
+    font-size: 18px;
+}
+
+.third .follow i:hover {
+    color: #FEE715FF;
+}
+
+.fourth {
+    margin: 2.5% 100px 0 0px;
+}
+
+.fourth span {
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.fourth img {
+    height: 100px;
+    width: 100px;
+    transition: 0.3s ease;
+}
+
+.fourth img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    padding: 15px 0 2px 0;
+    font-size: 18px;
+    margin: 5px 0 5px 26.5%;
+}
+
+footer strong,
+footer i{
+    color: aliceblue;
+}
