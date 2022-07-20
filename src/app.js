@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const path = require('path');
 const dotenv = require('dotenv');
-const DB = process.env.DATABASE;
+const DB = 'mongodb+srv://saksham:saksham123@cluster0.4up7puc.mongodb.net/ContactForm?retryWrites=true&w=majority';
 const port = process.env.PORT || 8000;
 const hostname = '127.0.0.1';
 
@@ -27,12 +27,7 @@ app.set('views', viewsPath);
 
 
 // Connecting to MongoDB Atlas
-mongoose.connect(DB, {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-}).then( () => {
+mongoose.connect(DB).then( () => {
     console.log('Connection Successful, we are connected!')
 }).catch( (err) => console.log('Failed to connect to Database'));
 
