@@ -3,13 +3,13 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const path = require('path');
-// const dotenv = require('dotenv');
-const DB = 'mongodb+srv://saksham:saksham123@cluster0.4up7puc.mongodb.net/ContactForm?retryWrites=true&w=majority';
+const dotenv = require('dotenv');
+const DB = process.env.DATABASE;
 const port = process.env.PORT || 8000;
 const hostname = '127.0.0.1';
 
 // Setting up the dotenv
-// dotenv.config({path: './config.env'});
+// dotenv.config({path: '../config.env' });
 
 
 // Serving static files
@@ -26,19 +26,13 @@ const viewsPath = path.join(__dirname, "../views");
 app.set('views', viewsPath);
 
 
-// Connecting to mongodb
-// mongoose.connect('mongodb://localhost/ContactForm');
-
-
-// var db = mongoose.connection;
-// db.on('error', console.error.bind(console, 'connection-error'));
-// db.once('open', function() {
-//     console.log('We are connected Saksham!')
-// });
-
-
 // Connecting to MongoDB Atlas
-mongoose.connect(DB).then( () => {
+mongoose.connect(DB, {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+}).then( () => {
     console.log('Connection Successful, we are connected!')
 }).catch( (err) => console.log('Failed to connect to Database'));
 
@@ -81,9 +75,9 @@ app.post('/about', (req, res) =>{
     console.log(req.body);
     var myData = new Contact(req.body);
     myData.save().then( function() {
-        res.status(200).send(`<h1>Your data has been stored in the Database Successfully!</h1><br><a href="/"><button>Home</button></a>`);
+        res.status(200).send(`<h1>Your response has been stored in the Database Successfully!</h1><br><a href="/"><button>Home</button></a>`);
     }).catch( function() {
-        res.status(400).send(`<h1>The data has not been saved to the Database due to an error, please try again!</h1><br><a href="/about"><button>Back</button></a>`)
+        res.status(400).send(`<h1>The response has not been stored to the Database due to an error, please try again!</h1><br><a href="/about"><button>Back</button></a>`)
     })
 });
 
