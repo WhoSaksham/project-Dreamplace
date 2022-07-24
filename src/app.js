@@ -1,15 +1,14 @@
+// Setting up the dotenv
+require('dotenv').config({ path: 'config.env'})
+
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const path = require('path');
-const dotenv = require('dotenv');
-const DB = 'mongodb+srv://saksham:saksham123@cluster0.4up7puc.mongodb.net/ContactForm?retryWrites=true&w=majority';
+const DB = process.env.DATABASE;
 const port = process.env.PORT || 8000;
 const hostname = '127.0.0.1';
-
-// Setting up the dotenv
-// dotenv.config({path: '../config.env' });
 
 
 // Serving static files

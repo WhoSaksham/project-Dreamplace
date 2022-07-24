@@ -42,10 +42,10 @@ block content
       h1 Contact
       p Want to connect with me? Fill the form below and I'll get back to you ASAP! &#x1F609;
       form.contact(action='/about', method='post')
-        input#name(name='name',type='text', placeholder='Enter your Name')
-        input#email(name='email',type='email', placeholder='Enter your Email Address')
-        input#phone(name='phone',type='number', placeholder='Enter your Contact Number')
-        textarea#desc(name='desc', cols='20', rows='7', placeholder='Enter your Concern!')
+        input#name(name='name',type='text', required="true", placeholder='Enter your Name')
+        input#email(name='email',type='email', required="true", placeholder='Enter your Email Address')
+        input#phone(name='phone',type='number', required="true", placeholder='Enter your Contact Number')
+        textarea#desc(name='desc', cols='20', required="true", rows='15', placeholder='Enter your Concern!')
         button.btn Submit
     footer.footer
       .flex
@@ -91,7 +91,7 @@ block content
               a(href='https://twitter.com/who_saksham', target='_blank')
                 i.fa-brands.fa-twitter
             div
-              a(href='/', target='_blank')
+              a(href='https://our-weatherapp.herokuapp.com/', target='_blank')
                 i.fa-solid.fa-globe
         .fourth
           span Made with
