@@ -26,10 +26,14 @@ app.set('views', viewsPath);
 
 
 // Connecting to MongoDB Atlas
-mongoose.connect(DB).then( () => {
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(DB)
     console.log('Connection Successful, we are connected!')
-}).catch( (err) => console.log('Failed to connect to Database'));
-
+  } catch (error) {
+    console.log('Failed to connect to Database...', error.message)
+  }
+}
 
 // Defining a Schema for collections
 var formSchema = new mongoose.Schema({
@@ -42,7 +46,6 @@ var formSchema = new mongoose.Schema({
 var Contact = mongoose.model('Contact', formSchema);
 
 app.use(express.urlencoded( {extended : true} ));
-
 
 // Endpoints
 app.get('/', (req, res) => {
@@ -80,6 +83,8 @@ app.get('*', (req, res) => {
 });
 
 // Listening the server
-app.listen(port, () => {
-    console.log(`Server has successfully initiated on http://${hostname}:${port}`)
+connectDB().then(() => {
+    app.listen(port, () => {
+        console.log(`Server has successfully initiated on http://${hostname}:${port}`)
+    })
 })
